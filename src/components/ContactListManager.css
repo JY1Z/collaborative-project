@@ -1,0 +1,87 @@
+/* Container for the whole Contact List Manager */
+.contact-list-manager {
+    max-width: 600px;
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: #f7d2c4; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Form styling */
+  .contact-list-manager form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  
+  /* Input fields styling */
+  .contact-list-manager input {
+    padding: 12px; 
+    font-size: 18px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Label styling */
+  .contact-list-manager label {
+    font-weight: bold;
+    margin-bottom: 10px; 
+    color: #333; 
+  }
+  
+  /* Button styling */
+  .contact-list-manager button {
+    padding: 12px; 
+    font-size: 18px; 
+    color: #fff; 
+    background-color: #34c759; 
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+  }
+  
+  .contact-list-manager button:hover {
+    background-color: #2f9a44; 
+  }
+  
+  /* Contact List styling */
+  .contact-list-manager ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-list-manager li {
+    background-color: #fff; 
+    padding: 20px; 
+    margin-bottom: 15px; 
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Contact details */
+  .contact-list-manager li p {
+    margin: 0;
+    font-size: 18px; 
+  }
+  
+  /* Delete button */
+  .contact-list-manager li button {
+    padding: 8px 12px; 
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #e74c3c; 
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+  }
+  
+  .contact-list-manager li button:hover {
+    background-color: #c0392b; 
+  }
+  
