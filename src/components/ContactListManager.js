@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ContactListManager.css';
-
+import Contact from './Contact';
 
 function ContactListManager() {
   // State to manage contact list and form input values
@@ -26,14 +26,14 @@ function ContactListManager() {
     setFormData({ name: '', email: '', phone: '' }); // Reset form
   };
 
-  // Function to delete a contact by index
-  const deleteContact = (index) => {
-    const updatedContacts = contacts.filter((_, i) => i !== index);
+  // Function to delete a contact
+  const deleteContact = (contact) => {
+    const updatedContacts = contacts.filter((c) => c !== contact);
     setContacts(updatedContacts);
   };
 
   return (
-    <div className="contact-list-manager"> {/* Added className */}
+    <div className="contact-list-manager">
       <h2>Contact List Manager</h2>
 
       {/* Contact Form */}
@@ -77,11 +77,8 @@ function ContactListManager() {
       <h3>Contact List</h3>
       <ul>
         {contacts.length > 0 ? (
-          contacts.map((contact, index) => (
-            <li key={index}>
-              <p>{contact.name} - {contact.email} - {contact.phone}</p>
-              <button onClick={() => deleteContact(index)}>Delete</button>
-            </li>
+          contacts.map((contact) => (
+            <Contact key={contact.name} contact={contact} onDelete={deleteContact} />
           ))
         ) : (
           <p>No contacts available</p>
