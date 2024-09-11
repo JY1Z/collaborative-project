@@ -66,8 +66,8 @@ function RecipeManager() {
       <ol>
         {recipes.map((recipe, index) => (
           <li key={index}>
-            Name {recipe.name}；  ingredients：{recipe.ingredients}；   
-            instructions：{recipe.instructions}
+            Name:{recipe.name}； Ingredients:{recipe.ingredients}；   
+            Instructions：{recipe.instructions}
             <button onClick={() => deleteRecipe(index)}>Delete</button>
           </li>
         ))}
