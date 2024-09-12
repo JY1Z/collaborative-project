@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 import BookCollectionManager from './components/BookCollectionManager';
+import ShoppingCart from './components/ShoppingCart';
 
 function App() {
   return (
-    <div className="App">
-      <BookCollectionManager />
-    </div>
+    <>
+     <ShoppingCart />
+     <BookCollectionManager />
+    </>
   );
 }
 
