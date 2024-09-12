@@ -1,17 +1,14 @@
-import RecipeManager from './components/RecipeManager'; 
-import "./components/Recipe.css";
 
+import BookCollectionManager from './components/BookCollectionManager';
+import ShoppingCart from './components/ShoppingCart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to Recipe Manager</h1>
-      </header>
-      <main>
-        <RecipeManager />
-      </main>
-    </div>
+    <>
+     <ShoppingCart />
+     <BookCollectionManager />
+     <RecipeManager />
+    </>
   );
 }
 
