@@ -26,8 +26,6 @@ function BookCollectionManager() {
     setBooks(updatedBooks);
   }
 
-  console.log(books)
-
   return (
     <div className="book-collection">
       <h1>Book Collection Manager</h1>

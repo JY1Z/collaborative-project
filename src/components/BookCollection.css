@@ -1,23 +1,10 @@
 :root {
-    --color-primary-a0: #ffffff;
-    --color-primary-a10: #ddebea;
-    --color-primary-a20: #bbd7d6;
-    --color-primary-a30: #99c3c2;
-
-    --color-primary-a50: #76b0af;
-    --color-primary-a60: #588180;
     --color-primary-a70: #3c5554;
     --color-primary-a80: #212c2c;
     --color-primary-a90: #000000;
 }
 
-body {
-    background-color: var(--color-primary-a80);
-    color: var(--color-primary-a90)
-}
-
 .book-collection {
-    background-color: var(--color-primary-a10);
     width: 50vw;
     border-radius: 12px;
     padding: 1rem;
@@ -32,7 +19,7 @@ body {
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 10px;
-    border: none;
+    border: #99c3c2 2px solid;
 }
 
 .book-collection #add_button {
@@ -40,12 +27,12 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 12px;
     border: none;
-    background-color: var(--color-primary-a80);
-    color: var(--color-primary-a0);
+    background-color: #212c2c;
+    color: white;
 }
 
 .book-collection #add_button:hover {
-    background-color: var(--color-primary-a60);
+    background-color: #588180;
 }
 
 .titlelabel {
@@ -60,11 +47,19 @@ body {
     text-align: left;
 }
 
-ol li:nth-child(2n+1) {
-    background-color: var(--color-primary-a20);
+.book-collection ol {
+    margin: 2rem 1rem;
+    list-style-type: none;
+    padding: 0;
 }
 
+.book-collection ol li:nth-child(2n+1) {
+    background-color: #bbd7d6;
+}
 
+.book-collection ol li:nth-child(2n) {
+    background-color: #ddebea;
+}
 
 .deletebutton {
     justify-content: flex-end;
@@ -73,17 +68,10 @@ ol li:nth-child(2n+1) {
     border: none;
     border-radius: 4px;
     background-color: transparent;
-    color: var(--color-primary-a70);
+    color: #3c5554;
     text-decoration: underline;
 }
 
 .deletebutton:hover {
-    color: var(--color-primary-a90)
-}
-
-ol {
-    width: 100%;
-    margin: 2rem 0;
-    padding: 0;
-    background-color: var(--color-primary-a30);
+    color: black
 }
