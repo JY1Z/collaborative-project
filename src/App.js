@@ -1,3 +1,4 @@
+
 import BookCollectionManager from './components/BookCollectionManager';
 import ShoppingCart from './components/ShoppingCart';
 
@@ -6,6 +7,7 @@ function App() {
     <>
      <ShoppingCart />
      <BookCollectionManager />
+     <RecipeManager />
     </>
   );
 }
