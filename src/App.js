@@ -1,12 +1,18 @@
-import  ContactListManager from './components/ContactListManager';
 
-import './App.css';
+
+import BookCollectionManager from './components/BookCollectionManager';
+import ShoppingCart from './components/ShoppingCart';
+import RecipeManager from './components/RecipeManager';
+import  ContactListManager from './components/ContactListManager';
 
 function App() {
   return (
-    <div className="App">
-      <ContactListManager/>
-    </div>
+    <>
+     <ShoppingCart />
+     <BookCollectionManager />
+     <RecipeManager />
+    <ContactListManager/>
+    </>
   );
 }
 

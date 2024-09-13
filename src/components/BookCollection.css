@@ -1,0 +1,77 @@
+:root {
+    --color-primary-a70: #3c5554;
+    --color-primary-a80: #212c2c;
+    --color-primary-a90: #000000;
+}
+
+.book-collection {
+    width: 50vw;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 4rem auto;
+}
+
+.book-collection form {
+    display: flex;
+}
+
+.book-collection input {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: #99c3c2 2px solid;
+}
+
+.book-collection #add_button {
+    width: 10vw;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #212c2c;
+    color: white;
+}
+
+.book-collection #add_button:hover {
+    background-color: #588180;
+}
+
+.titlelabel {
+    font-weight: 700;
+}
+
+.listitem {
+    list-style-type: none;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.book-collection ol {
+    margin: 2rem 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-collection ol li:nth-child(2n+1) {
+    background-color: #bbd7d6;
+}
+
+.book-collection ol li:nth-child(2n) {
+    background-color: #ddebea;
+}
+
+.deletebutton {
+    justify-content: flex-end;
+    text-align: right;
+    margin: auto 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #3c5554;
+    text-decoration: underline;
+}
+
+.deletebutton:hover {
+    color: black
+}
