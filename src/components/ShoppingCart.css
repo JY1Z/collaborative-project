@@ -1,6 +1,7 @@
 .shopping-cart{
   padding: 8px;
   max-width: 350px;
+  margin: 0 auto;
 }
 
 .shopping-form{
